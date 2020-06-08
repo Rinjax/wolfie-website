@@ -11,12 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-
 mix.setPublicPath('./public/website');
 
 mix.setResourceRoot('/website/');
 
 mix.js('packages/wolfie/website/src/Resources/Assets/js/app.js', 'js/app.js')
     .js('packages/wolfie/website/src/Resources/Assets/js/main.js', 'js/main.js')
-    .sourceMaps()
-    .version();
+    .sourceMaps();
+    //.version();

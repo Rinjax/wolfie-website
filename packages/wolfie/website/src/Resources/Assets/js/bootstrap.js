@@ -1,4 +1,10 @@
+
+
 window.axios = require('axios');
+
+//window.stripe = require('./stripe');
+
+window.stripe = Stripe('pk_test_L4WbizHjIekcvmw3pKrA5Ndc00GZRO5dbo');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -15,6 +21,7 @@ if (token) {
 } else {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
+
 
 
 /**

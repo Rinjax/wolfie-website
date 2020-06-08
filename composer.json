@@ -13,7 +13,8 @@
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "stripe/stripe-php": "^7.36"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -35,7 +36,10 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Wolfie\\Website\\": "packages/wolfie/website/src/"
+            "Wolfie\\Website\\": "packages/wolfie/website/src/",
+            "Wolfie\\ProductRepository\\": "packages/wolfie/product-repository/src/",
+            "Wolfie\\Models\\": "packages/wolfie/models/src/",
+            "Wolfie\\Stripe\\": "packages/wolfie/stripe/src/"
         },
         "classmap": [
             "database/seeds",

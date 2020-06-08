@@ -166,6 +166,8 @@ return [
          * Package Service Providers...
          */
         Wolfie\Website\Providers\WebsiteServiceProvider::class,
+        Wolfie\Website\Providers\RouteServiceProvider::class,
+        Wolfie\Models\Providers\ModelsServiceProvider::class,
 
         /*
          * Application Service Providers...

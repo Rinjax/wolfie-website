@@ -8,12 +8,20 @@
         <v-toolbar-title>JTWolfie ART</v-toolbar-title>
         <v-spacer></v-spacer>
 
+        <shopping-cart></shopping-cart>
+
     </v-app-bar>
 </template>
 
 <script>
+    import ShoppingCart from "../main/components/ShoppingCart";
+
     export default {
-        name: "Header"
+        name: "Header",
+        components: {
+            ShoppingCart
+        }
+
     }
 </script>
 
